@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        width: 420px;
+        height: 680px;
+        overflow-y: auto;
+        background-color: #f4f6f8;
+      }
+      iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Added id attribute to link with our background script -->
+    <iframe id="dashboard-frame" src="http://localhost:3001"></iframe>
+
+    <!-- Inject the active tab retrieval logic -->
+    <script src="popup.js"></script>
+  </body>
+</html>
